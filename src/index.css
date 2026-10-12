@@ -1,29 +1,97 @@
 @import "tailwindcss";
 
 @layer base {
-  body {
-    background-color: #141312;
-    color: #ede8e3;
-    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-  }
-
-  code, pre, .font-mono {
-    font-family: 'JetBrains Mono', monospace;
+  :root {
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
   }
 }
 
-/* Custom scrollbars for data panels */
+@theme {
+  --font-heading: 'Poppins', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-grow-50: #f2f8f2;
+  --color-grow-100: #e1efe1;
+  --color-grow-200: #c4dec4;
+  --color-grow-300: #9bc69c;
+  --color-grow-400: #6ca76e;
+  --color-grow-500: #478c4a;
+  --color-grow-600: #2e7d32;
+  --color-grow-700: #266429;
+  --color-grow-800: #225025;
+  --color-grow-900: #1d4320;
+  --color-grow-950: #0d230f;
+
+  --color-amber-harvest: #ffa000;
+  --color-amber-harvest-dark: #e68e00;
+  --color-amber-harvest-light: #fff3e0;
+
+  --color-trust-blue: #1565c0;
+  --color-trust-blue-dark: #0d47a1;
+  --color-trust-blue-light: #e3f2fd;
+
+  --color-charcoal: #1e2420;
+  --color-charcoal-muted: #4b5563;
+  --color-surface: #f9faf9;
+  --color-surface-card: #ffffff;
+  --color-border-subtle: #e5e9e5;
+
+  --color-dark-bg: #0d1510;
+  --color-dark-surface: #142018;
+  --color-dark-card: #1a2a20;
+  --color-dark-border: #23372b;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-charcoal);
+  background-color: var(--color-surface);
+  margin: 0;
+  padding: 0;
+}
+
+.dark body {
+  color: #f3f4f6;
+  background-color: var(--color-dark-bg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* Tabular figures for data integrity */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Glassmorphism */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.dark .glass-panel {
+  background: rgba(20, 32, 24, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #1c1917;
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: #44403c;
-  border-radius: 3px;
+  background: rgba(46, 125, 50, 0.25);
+  border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #78716c;
+  background: rgba(46, 125, 50, 0.45);
 }
