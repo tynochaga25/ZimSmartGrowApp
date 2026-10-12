@@ -1,0 +1,6 @@
+{
+  "name": "ZimSmart Grow - Omnichannel Agricultural Advisory Platform",
+  "description": "AI-powered agricultural advisory platform for Zimbabwean farmers across USSD, SMS, WhatsApp, Web PWA, and Mobile with agro-ecological Natural Region intelligence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
