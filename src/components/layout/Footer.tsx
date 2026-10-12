@@ -56,15 +56,15 @@ export const Footer: React.FC = () => {
             <div className="space-y-2 text-xs text-neutral-500 dark:text-neutral-400">
               <div className="flex items-center gap-2">
                 <MapPin className="w-3.5 h-3.5 text-grow-600 shrink-0" />
-                <span>Harare Agricultural Innovation Hub, Zimbabwe</span>
+                <span>Harare, Zimbabwe</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-3.5 h-3.5 text-grow-600 shrink-0" />
-                <span className="font-mono tabular-nums">+263 (0242) 789 123 / +263 77 100 2000</span>
+                <span className="font-mono tabular-nums">+263780660853</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-3.5 h-3.5 text-grow-600 shrink-0" />
-                <span>contact@zimsmartgrow.co.zw</span>
+                <span>zimsmartgrow@gmail.com</span>
               </div>
             </div>
           </div>
